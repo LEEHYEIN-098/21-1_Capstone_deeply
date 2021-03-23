@@ -41,8 +41,12 @@
 
 
 
-## WIL
+## WIL (Week I Learned)
 * [3주차 오류 수정 사항](./WIL/week_2~3.md)
 
+
+## 프로젝트 진행 
+* [프로젝트 진행 상황 기록 표](./WIL/Project_Progress)
+* 모임 : 월, 수 -> 주차별 목표 못끝낼 시 금요일 추가 모임
 
 
