@@ -14,4 +14,4 @@
         pi / raspberry
         
  ### 3. UV4L 설치
-        0. 저장소 미러 변경 (-> 카이스트) <https://engineeringcode.tistory.com/48>
+        0. 저장소 미러 변경 (-> 카이스트) https://engineeringcode.tistory.com/48
