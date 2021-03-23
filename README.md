@@ -1,5 +1,5 @@
 # 웹 기반 실시간 비디오 스트리밍 로봇 개발 
-_______________________________
+
 [캡스톤 디자인 교수님 프로젝트 RFP](./Capston_RFP.pdf)
 
 ## 프로젝트 계획서
@@ -26,7 +26,7 @@ _______________________________
 * 활동 이슈사항 메모
 * 제출한 보고서 계획서 표 내용 부분에 링크 걸어 첨부해두기
 
-_____________________________
+
 
 ## 사용 기술 스택
 <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>
@@ -38,7 +38,7 @@ _____________________________
 <img src="https://img.shields.io/badge/c-00599C?style=flat-square&logo=c&logoColor=white"/></a> 
 <img src="https://img.shields.io/badge/RaspberryPi-C51A4A?style=flat-square&logo=Raspberry_Pi&logoColor=white"/></a> 
 
-_________________________________
+
 
 ## WIL
 * [3주차 오류 수정 사항](./WIL/week_2~3.md)
