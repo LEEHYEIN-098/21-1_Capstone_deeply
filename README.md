@@ -41,5 +41,5 @@ _____________________________
 _________________________________
 
 ## WIL
-* [3주차](../docs/21-1_Capstone_deeply/week_2~3.md/)
+* [3주차](../sejeong-park/21-1_Capstone_deeply/week_2~3.md/)
 
