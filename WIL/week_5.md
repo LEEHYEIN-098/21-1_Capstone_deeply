@@ -20,5 +20,5 @@ uv4l-raspicam.conf에는 encoding 옵션 있으나 uv4l-uvc.conf에는 옵션 �
 
 
 ### 외부로부터 서버 연결
-$ uv4l --external-device
+$ uv4l --external-device  
 [server] invalid video device
