@@ -1,12 +1,12 @@
 ### http -> https 변경 시도
-1. 인증키, 인증서 생성
+1. 인증키, 인증서 생성  
   $ openssl genrsa -out selfsign.key 2048 && openssl req -new -x509 -key selfsign.key -out selfsign.crt -sha256
   
-2. uncomment the three SSL lines on /etc/uv4l/uv4l-uvc.conf
-  LIKE THIS:
-/// HTTPS options:
-server-option = --use-ssl=yes
-server-option = --ssl-private-key-file=/home/pi/selfsign.key
+2. uncomment the three SSL lines on /etc/uv4l/uv4l-uvc.conf  
+  LIKE THIS:  
+/// HTTPS options:  
+server-option = --use-ssl=yes  
+server-option = --ssl-private-key-file=/home/pi/selfsign.key  
 server-option = --ssl-certificate-file=/hime/pi/selfsign.cert
 
 3. reboot 후 터미널에 uv4l --driver raspicam --server-option '--use-ssl=yes'
