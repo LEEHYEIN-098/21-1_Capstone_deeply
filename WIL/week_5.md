@@ -7,7 +7,8 @@
 /// HTTPS options:  
 server-option = --use-ssl=yes  
 server-option = --ssl-private-key-file=/home/pi/selfsign.key  
-server-option = --ssl-certificate-file=/hime/pi/selfsign.cert
+server-option = --ssl-certificate-file=/hime/pi/selfsign.cert  
+{참고} https://www.raspberrypi.org/forums/viewtopic.php?t=200326
 
 3. reboot 후 터미널에 uv4l --driver raspicam --server-option '--use-ssl=yes'
 
