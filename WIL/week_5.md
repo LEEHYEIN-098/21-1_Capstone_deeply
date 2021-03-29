@@ -17,3 +17,8 @@ server-option = --ssl-certificate-file=/hime/pi/selfsign.cert
 
 ### h264로 코덱 변경 -- 웹캠 딜레이 문제 해결 위해
 uv4l-raspicam.conf에는 encoding 옵션 있으나 uv4l-uvc.conf에는 옵션 없음. 방법 구글링ing
+
+
+### 외부로부터 서버 연결
+$ uv4l --external-device
+[server] invalid video device
