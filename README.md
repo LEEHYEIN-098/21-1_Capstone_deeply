@@ -44,6 +44,7 @@
 
 ## WIL (Week I Learned)
 * [3주차 오류 수정 사항](./WIL/week_2~3.md)
+* [5주차 오류 수정 및 코드 공유](./WIL/week_5.md)
 
 
 ## 프로젝트 진행 
