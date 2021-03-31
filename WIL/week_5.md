@@ -1,3 +1,6 @@
+### RTMP (Real Time Message Protocol)
+
+
 ### http -> https 변경 시도
 1. 인증키, 인증서 생성  
   $ openssl genrsa -out selfsign.key 2048 && openssl req -new -x509 -key selfsign.key -out selfsign.crt -sha256
@@ -22,3 +25,4 @@ uv4l-raspicam.conf에는 encoding 옵션 있으나 uv4l-uvc.conf에는 옵션 �
 ### 외부로부터 서버 연결
 $ uv4l --external-device  
 [server] invalid video device
+
