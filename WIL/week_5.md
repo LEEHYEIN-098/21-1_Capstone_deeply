@@ -26,3 +26,6 @@ uv4l-raspicam.conf에는 encoding 옵션 있으나 uv4l-uvc.conf에는 옵션 �
 $ uv4l --external-device  
 [server] invalid video device
 
+
+-------
+UV4L 실제, 가상 비디오 입력 및 출력 장치를 위한 video4Linux2호환 크로스 플랫폼
