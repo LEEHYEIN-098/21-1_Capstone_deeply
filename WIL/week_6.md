@@ -32,6 +32,8 @@
  우리 서버 192.168.1.46:9090
  
  `sudo nano /etc/uv4l/uv4l-uvc.conf`
+ 
+ uv4l uvc 도움말 요청하는 코드 `uv4l --help --dervier uvc --driver-help`
 
 (이미 서버를 열었었다면 `pkill uv4l` 먼저 해줘야함)
 
