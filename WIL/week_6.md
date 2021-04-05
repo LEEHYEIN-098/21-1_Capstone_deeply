@@ -1,4 +1,4 @@
-## 6주차 Week I learned
+# 6주차 Week I learned
 
 * 외부 컴퓨터에서 라즈베리파이 ip 서버 연결하는 방법
 
@@ -11,3 +11,37 @@
       `sudo uv4l --external-driver --device-name=video0 --server-option '--port=9090'`
 
 
+* 라즈베리파이 변경 후 ip : 192.168.1.46
+
+  => 외부 컴퓨터에서 uv4l streaming server 들어갈 때 `192.168.1.46:9090` 으로 들어가야함
+  여전히 invalid video device
+  
+* 우리 webcam device ID: 0c33:6344
+ 
+ driver 확인 `uv4l -driver uvc -device-id 0c33:6344` 
+ 
+ error: --device-path or --device-id not specified. 
+  
+ -------
+ 
+ 
+ ## 라즈베리파이 외부에서 카메라 연결 성공 & 카메라에 딜레이 아예 없음
+ 
+ * **서버 여는 방법(순서)**
+
+(이미 서버를 열었었다면 `pkill uv4l` 먼저 해줘야함)
+
+1) `uv4l --auto-video_nr --driver uvc --device-id 0c33:6344`(--device-path 0c33:6344와 같다.)
+
+   => *uvc 디바이스의 고유 id를 직접 지정해준후 detect 된 것이라서 바로 연결이 가능*
+   
+2) 외부 서버 여는 코드
+
+   => `uv4l --external-driver --device-name=video1 --server-option '--port=9090'
+   
+   {직접 연결해주어서인지 time lag 현상이 아예 없어졌다.}
+   
+ 
+ 
+ 
+ 
