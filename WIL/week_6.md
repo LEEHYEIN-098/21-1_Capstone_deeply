@@ -37,7 +37,7 @@
    
 2) 외부 서버 여는 코드
 
-   => `uv4l --external-driver --device-name=video1 --server-option '--port=9090'
+   => `uv4l --external-driver --device-name=video1 --server-option '--port=9090'`
    
    {직접 연결해주어서인지 time lag 현상이 아예 없어졌다.}
    
