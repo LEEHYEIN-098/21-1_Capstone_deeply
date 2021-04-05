@@ -6,7 +6,7 @@
 |3주차|라즈베리파이 환경 설정 및 |UV4L 다운로드 및 서버연결 완료|웹캠 연결|[WIL](./week_2~3.md)|
 |4주차|서버 사전 조사|제안서 작성 및 온라인 미팅|제안서 발표|[제안서](./Report/CapstoneProposal.pdf)|
 |5주차|https, codec 변경 시도/외부로부터 서버 접속(진행중)/웹캠 딜레이 문제(진행중)	| 노트북으로 서버 접속&교수님 면담|(과제가많아서 생략..)|[5주차보고서](./Report/week5.pdf), [WIL](./week_5.md)|
-|6주차|UVC 연결 성공, Time lag 현상 해결|
+|6주차|UVC 연결 성공, Time lag 현상 해결|||[WIL](./week_6.md)|
 |7주차|
 |8주차|
 |9주차|
@@ -21,6 +21,11 @@
 
 
 * 관련 링크 첨부
+
+https://www.linux-projects.org/
+
+https://raspberrypi.stackexchange.com/questions/76680/u4vl-streaming-to-multiple-web-clients
+
 
 ----------------------------
 <details>
@@ -80,18 +85,20 @@
 <details markdown="1">
 <summary>6주차</summary>
 
+
 * __공지 사항__ : 
 
     driver raspicam 쓰지 않기!! (쓰면 해놓은거 헷갈림 우리 확신의 UVC이고, 지정 잘해줬으니까 이대로 진행 시킵시다) **driver-uvc!!**
     
     실행 종료에서도 `sudo service uv4l_uvc restart` 이런식으로 작성 raspicam은 그냥 없는 거라고 생각하기 => 함부로 바꾸면 헷갈려짐.. 주의...부탁드립니다 uvc로 다 열려요!
 
+
 * __월요일 목표__
 
 * -[X] Time delay, lag 현상 해결 
 * -[X] 외부에서 UV4L 화면 열었을 때 실시간 영상 실행
-* -[ ] Remote/local 캠 둘다 켜보기 => chrome에는 보안이 세서 https로 지정을 해줘야하고 firefox에서는 실행 가능
-* -[ ] http=>https로 변경 => 미희 시도 중 ..
+* -[ ] Remote/local 캠 둘다 켜보기 => chrome에는 보안이 세서 https로 지정을 해줘야하고 firefox에서는 실행 가능으로 예상
+* -[ ] http=>https로 변경 => 미희 시도 중 .. => 또 실패 !(chrome브라우저를 이용하려면 아무래도 이 과정이 필요한 듯 한데 자꾸 안되네.. )
 
 
 * __월요일 진행상황__
@@ -99,9 +106,24 @@
        교수님 요청 사항 : 1) --verbosity 에러 상황 보고 2) firefox로 웹 한번 켜보기
 
        😄😄😄😄😄=> 계속 해결 못하던 것 해결했다~~ 
+       
+       컴퓨터 두세대 접속.. 했으면 좋았을 텐데, 여러 대 접속이 안되는 듯하다.
+       (Sorry, the device is either busy streaming to another peer or previous shutdown has not been completed yet)
+       이라는 오류가 뜬다... => 우리는 Jauns 로 시도를 해봐야할 것 같다!
+       
+       https://www.linux-projects.org/uv4l/tutorials/custom-webapp-with-face-detection/ 이게 html해서 사용자 custom하는 튜토리얼로 추정
 
 
+    **교수님 요청사항**
+    
+    1) uv4l에 두세개로 동시요청해보아 딜레이 얼마나 느려지는 지 확인해보자 **=> 확인 결과, 여러대 접속이 불가능했음**    _=>Janus 서버 알아봐야함_
 
+    2) webrtc로 컴퓨터에서는 영상을 받고, 컴퓨터에서는 반대로 로봇한테 전후좌우 이동하고 팔 제어 명령 주는 것도 data channel로 해서 해보자. 
+        
+        =>data channel 공부 해보자!
+        
+        (=> 일단 janus 연결이 우선일 것 같다!)
+        
 
 
 
@@ -109,19 +131,37 @@
 * __화요일 목표__
 
 세정 ps: 혜이니 컴퓨터로 firefox 브라우저 깔아서 서버 열고 서버 안에 두번째 체크 박스 중에 camera 체크하고 call 한번 불러줘주세영...
-
+(chrome에서 열면 https가 필요하고, firefox에서 열면 굳이 안해줘도 될것같아..)
 remote 캠이랑 local 캠이랑 동시에 실행 가능할 것 같은데 firefox 깔다가 용량이 없어서 못깔렸어...ㅜㅜ
+
++ 교수님께서 같은 컴에서 uv4l 같은 웹페이지 두개 열어도 안되냐고 물어보셨는데 이것도 한번 해줬으면 좋겟어!
+
 
 
 * __화요일 진행상황__
 
 
+
+
+
+
 * __수요일 목표__
 
+*  -[ ] Janus gateway 지정해주고 다중 스트리밍 구축하기 (딜레이도 확인하기)
+*  -[ ] ㅇㅇ
+*  -[ ] ㅇㅇ
+*  -[ ] ㅇㅇ
 
 * __수요일 진행상황__
 
+
+
+
+
+
 </details>
----------
+
+
+---
 
 
