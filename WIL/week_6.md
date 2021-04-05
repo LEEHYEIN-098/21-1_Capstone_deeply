@@ -31,9 +31,9 @@
  
  우리 서버 192.168.1.46:9090
  
- `sudo nano /etc/uv4l/uv4l-uvc.conf`
+ `sudo nano /etc/uv4l/uv4l-uvc.conf` (계속 까먹어서 써놓은 것!)
  
- uv4l uvc 도움말 요청하는 코드 `uv4l --help --dervier uvc --driver-help`
+ uv4l uvc 도움말 요청하는 코드 `uv4l --help --dervier uvc --driver-help`(참고용!)
 
 (이미 서버를 열었었다면 `pkill uv4l` 먼저 해줘야함)
 
@@ -48,6 +48,8 @@
    {직접 연결해주어서인지 time lag 현상이 아예 없어졌다.}
    
  
+ => call 불러왔는데 카메라에 초록창 이상한 화면이 뜬다? => 그냥 조금 쉬었다가 reboot! (또 안되면 test하면서 reboot 계속 해주면 다시 정신차림)
  
+   (일단 초록 화면이 들어왔다는건 device detected는 된 듯함 종종 이러는데 원인은 잘 모르겠음!)
  
  
