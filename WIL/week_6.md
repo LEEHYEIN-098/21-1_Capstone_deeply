@@ -57,9 +57,9 @@
 
 ## [속보]웹캠 고장으로 의심
 
-![error1](/image/IMG_1800.PNG)
+![error1](/image/IMG_1800.HEIC)
 정상 연결 상태라면 빨간 불이 들어와야 함.
 usb 카메라를 노트북에 연결 해보아도 불이 들어오지 않음.
 
-![error2](/image/IMG_1801.PNG)
+![error2](/image/IMG_1801.HEIC)
 (6주차 WIL 참고) 카메라 연결 과정의 일부 코드. "No device detected"
