@@ -57,32 +57,31 @@
 
 ## [속보]웹캠 고장
 
-<img src="/image/IMG_1800.jpg" width="40%">
+<img src="/image/IMG_1800.jpg" width="40%">  
+정상 연결 상태라면 빨간 불이 들어와야 함.  
+usb 카메라를 노트북에 연결 해보아도 불이 들어오지 않음.  
 
-정상 연결 상태라면 빨간 불이 들어와야 함.
-usb 카메라를 노트북에 연결 해보아도 불이 들어오지 않음.
-
-<img src="/image/IMG_1801.jpg" width="40%">
+<img src="/image/IMG_1801.jpg" width="40%">  
 (6주차 WIL 참고) 카메라 연결 과정의 일부 코드. "No device detected"
 
  ----------
  
 # 로지텍 C270i 웹캠 구매 (21/04/08)
  
-* 현재 연결되어 있는 카메라 확인
-	`$ lsusb | grep cam`
+* 현재 연결되어 있는 카메라 확인  
+	`$ lsusb | grep cam`  
 	Bus 001 Device 006: ID 046d:0825 Logitech, Inc. Webcam C270
 
-* 백그라운드에서 실행되고 있는 프로세스 확인
-	`$ ps -ef | grep uv4l`
-	-e 모든 프로세스
-	-f 자세히
-* 프로세스 종료
-	`$ (sudo) kill 15 [PID]`
-	15는 종료, 9는 강제 종료
-* 카메라 모든 정보 확인
-	`$ v4l2-ctl --all`
+* 백그라운드에서 실행되고 있는 프로세스 확인  
+	`$ ps -ef | grep uv4l`  
+	-e 모든 프로세스  
+	-f 자세히  
+* 프로세스 종료  
+	`$ (sudo) kill 15 [PID]`  
+	15는 종료, 9는 강제 종료  
+* 카메라 모든 정보 확인  
+	`$ v4l2-ctl --all`  
 
 <img src="/image/IMG_1822.jpg" width="40%"> Firefox
-<img src="/image/IMG_1823.jpg" width="40%"> Chrome
+<img src="/image/IMG_1823.jpg" width="40%"> Chrome  
 왜 또 안 될까..😞
