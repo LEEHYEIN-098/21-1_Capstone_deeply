@@ -22,7 +22,7 @@ server-option = --ssl-certificate-file=/hime/pi/selfsign.cert
 uv4l-raspicam.conf에는 encoding 옵션 있으나 uv4l-uvc.conf에는 옵션 없음. 방법 구글링ing
 
 
-### 외부로부터 서버 연결
+### 노트북에서 로컬호스트 웹캠 연결
 $ uv4l --external-device  
 [server] invalid video device
 
