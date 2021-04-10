@@ -76,12 +76,28 @@ usb 카메라를 노트북에 연결 해보아도 불이 들어오지 않음.
 	`$ ps -ef | grep uv4l`  
 	-e 모든 프로세스  
 	-f 자세히  
+	
 * 프로세스 종료  
 	`$ (sudo) kill 15 [PID]`  
 	15는 종료, 9는 강제 종료  
+	
 * 카메라 모든 정보 확인  
 	`$ v4l2-ctl --list-formats-ext`(수정)  
 
 <img src="/image/IMG_1822.jpg" width="40%"> Firefox
 <img src="/image/IMG_1823.jpg" width="40%"> Chrome  
-왜 또 안 될까..😞
+왜 또 안 될까..😞  
+
+ ----------
+ 
+(21/04/09)
+* /dev/video0에 uvc camera 올리기  
+	`$ sudo modprobe uvcvideo`  
+이후 웹캠에 불 들어옴  
+
+** (같은 공유기에서 와이파이로 연결된) 외부 컴퓨터에서 접속할 서버 열기 **
+1. `$ uv4l --auto-video_nr --driver uvc --device-id 046d:0825`  
+    주의) port 작성하지 않을 것. 작성 시 external-driver 하면 이미 사용 중이라는 에러.  
+2. `$ uv4l --external-driver --device-name=video0 --server-option '--port=9090'  
+
+ONLY AUDIO WORKS WITH GREEN/RED MOSAIC SCREEN
