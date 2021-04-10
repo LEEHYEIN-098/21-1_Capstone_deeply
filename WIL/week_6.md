@@ -101,3 +101,5 @@ usb 카메라를 노트북에 연결 해보아도 불이 들어오지 않음.
 2. `$ uv4l --external-driver --device-name=video0 --server-option '--port=9090'`  
 
 현재 상태; **ONLY AUDIO WORKS WITH GREEN/RED MOSAIC SCREEN**
+
+[WebRTC hangout video input broken, gives a green screen](https://bugs.chromium.org/p/chromium/issues/detail?id=399939#c22)
