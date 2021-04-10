@@ -55,7 +55,7 @@
  
  ----------
 
-## [속보]웹캠 고장
+## [속보]웹캠 고장 (21/04/06)
 
 <img src="/image/IMG_1800.jpg" width="40%">  
 정상 연결 상태라면 빨간 불이 들어와야 함.  
@@ -80,7 +80,7 @@ usb 카메라를 노트북에 연결 해보아도 불이 들어오지 않음.
 	`$ (sudo) kill 15 [PID]`  
 	15는 종료, 9는 강제 종료  
 * 카메라 모든 정보 확인  
-	`$ v4l2-ctl --all`  
+	`$ v4l2-ctl --list-formats-ext`(수정)  
 
 <img src="/image/IMG_1822.jpg" width="40%"> Firefox
 <img src="/image/IMG_1823.jpg" width="40%"> Chrome  
