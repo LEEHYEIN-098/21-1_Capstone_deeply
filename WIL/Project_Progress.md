@@ -5,8 +5,8 @@
 |2주차||목: 교수님 면담|첨부 ppt 및 로봇 작동 공부|
 |3주차|라즈베리파이 환경 설정 및 |UV4L 다운로드 및 서버연결 완료|웹캠 연결|[WIL](./week_2~3.md)|
 |4주차|서버 사전 조사|제안서 작성 및 온라인 미팅|제안서 발표|[제안서](./Report/CapstoneProposal.pdf)|
-|5주차|https, codec 변경 시도/"외부로부터" 서버 접속(진행중)/웹캠 딜레이 문제(진행중)	| 노트북으로 서버 접속&교수님 면담|(과제가많아서 생략..)|[5주차보고서](./Report/week5.pdf), [WIL](./week_5.md)|
-|6주차|UVC 연결 성공, Time lag 현상 해결|웹캠 고장...|영상 스트리밍 시도|[6주차보고서](./Report/week6.pdf), [WIL](./week_6.md)|
+|5주차|https, codec 변경 시도/"외부로부터" 서버 접속(진행중)/웹캠 딜레이 문제(진행중)	| 노트북으로 서버 접속&교수님 면담|(과제가많아서 생략..)|[5주차보고서](../Report/week5.pdf), [WIL](./week_5.md)|
+|6주차|UVC 연결 성공, Time lag 현상 해결|웹캠 고장...|영상 스트리밍 시도|[6주차보고서](../Report/week6.pdf), [WIL](./week_6.md)|
 |7주차|
 |8주차|시험기간
 |9주차|
@@ -165,5 +165,104 @@ remote 캠이랑 local 캠이랑 동시에 실행 가능할 것 같은데 firefo
 
 
 ---
+<details markdown="1">
+<summary>7주차</summary>
+
+* __월요일 목표__
+* -[ ] 컴퓨터에서 webRTC datachannel로 로봇에 명령어 보내기(양방향 통신 시도)'
+
+=> 로봇을 조종해서 움직이면 카메라로 실시간 화면 보여지는 것 보자 ! 
 
 
+
+</details>
+
+---
+
+<details markdown="1">
+<summary>8주차</summary>
+
+
+
+
+</details>
+
+---
+
+<details markdown="1">
+<summary>9주차</summary>
+
+
+
+
+</details>
+
+---
+
+<details markdown="1">
+<summary>10주차</summary>
+
+
+
+
+</details>
+
+---
+
+<details markdown="1">
+<summary>11주차</summary>
+
+
+
+
+</details>
+
+---
+
+<details markdown="1">
+<summary>12주차</summary>
+
+
+
+
+</details>
+
+---
+
+<details markdown="1">
+<summary>13주차</summary>
+
+
+
+
+</details>
+
+---
+
+<details markdown="1">
+<summary>14주차</summary>
+
+
+
+
+</details>
+
+---
+
+<details markdown="1">
+<summary>15주차</summary>
+
+
+
+
+</details>
+
+---
+
+<details markdown="1">
+<summary>16주차</summary>
+
+
+
+
+</details>
