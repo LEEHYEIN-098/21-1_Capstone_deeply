@@ -7,9 +7,9 @@
 |4주차|서버 사전 조사|제안서 작성 및 온라인 미팅|제안서 발표|[제안서](./Report/CapstoneProposal.pdf)|
 |5주차|https, codec 변경 시도/"외부로부터" 서버 접속(진행중)/웹캠 딜레이 문제(진행중)	| 노트북으로 서버 접속&교수님 면담|(과제가많아서 생략..)|[5주차보고서](../Report/week5.pdf), [WIL](./week_5.md)|
 |6주차|UVC 연결 성공, Time lag 현상 해결|웹캠 고장...|영상 스트리밍 시도|[6주차보고서](../Report/week6.pdf), [WIL](./week_6.md)|
-|7주차|
+|7주차|codelab webrtc 웹 제작한 것 라즈베리파이에서 실행(실패)|uv4l과 web 연결하는 시도 및 datachannel공부||(../Report/report_7.pdf),[WIL](./week_7.md)|
 |8주차|시험기간
-|9주차|
+|9주차|시험(7주차에 이어 추가 자료조사)|웹에서 UV4L streaming server 연동 성공||(../Report/report_9.pdf),[WIL](./week_9.md)|
 |10주차|
 |11주차|
 |12주차|
@@ -182,7 +182,7 @@ remote 캠이랑 local 캠이랑 동시에 실행 가능할 것 같은데 firefo
 <details markdown="1">
 <summary>8주차</summary>
 
-
+시험기간이므로 휴업합니다.
 
 
 </details>
@@ -191,6 +191,51 @@ remote 캠이랑 local 캠이랑 동시에 실행 가능할 것 같은데 firefo
 
 <details markdown="1">
 <summary>9주차</summary>
+
+* __교수님께 data channel 도움 요청__
+
+       웹 브라우저에서 datachannel 하는 것부터 해보자,
+       아래 첨부해주신거 데모 버전 실행해보고 소스 코드 구해서 이해한 다음 웹프로그래밍 해서 라즈베리 파이가 잘 받도록 해보자
+     
+     
+ 교수님께서 주신 참고 자료
+ 
+ https://developers.google.com/web/updates/2013/02/WebRTC-RTCDataChannel-demo-API-changes-and-Chrome-talks-to-Firefox
+ 
+ 참고자료 작성하신 분 깃허브 주소
+ 
+ https://github.com/samdutton/simpl/blob/gh-pages/rtcdatachannel/js/main.js
+       
+       
+* __월요일 목표__
+* -[X] datachannel Control 하는 참고 자료 더 찾아보기
+* -[ ] UV4L 영상 웹에서 연결하는 방법 알아보기
+
+찾은 참고 자료 블로그 링크
+
+https://webrtchacks.com/aiy-vision-kit-uv4l-web-server/
+
+https://m.blog.naver.com/PostView.nhn?blogId=codingspecialist&logNo=221178140657&categoryNo=30&proxyReferer=https:%2F%2Fblog.naver.com%2FPostView.nhn%3FblogId%3Dcodingspecialist%26logNo%3D221178140657%26categoryNo%3D30%26parentCategoryNo%3D0%26viewDate%3D%26currentPage%3D3%26postListTopCurrentPage%3D1%26from%3DpostList%26userTopListOpen%3Dtrue%26userTopListCount%3D10%26userTopListManageOpen%3Dfalse%26userTopListCurrentPage%3D3
+
+https://www.tutorialspoint.com/webrtc/index.htm
+
+https://www.instructables.com/WebRTC-Creeper-Drone-Browser-Controlled-RC-Car/
+
+https://github.com/vace117/CreeperAndroid
+
+http://naver.me/IMQP1TYC
+
+    UV4L 카메라 연결 안되는 부분 html에서 video src="http://raspiberrypi:9090/webrtc/stream" 이렇게 태그를 달면 되지 않을까? 라고 생각
+
+* __수요일 목표__
+* -[X] UV4L streaming server와 웹 연결 시킴
+* -[ ] datachannel 기능 구현하기
+
+UV4L 카메라 영상과 웹을 연동하는 건 uv4l-uvc.config 파일에서 가능했다
+
+참조 : https://www.linux-projects.org/uv4l/tutorials/custom-webapp-with-face-detection/
+
+* __금요일 목표__
 
 
 
@@ -202,6 +247,9 @@ remote 캠이랑 local 캠이랑 동시에 실행 가능할 것 같은데 firefo
 <details markdown="1">
 <summary>10주차</summary>
 
+* __10주차 목표
+*  -[ ] WebRTC datachannel로 명령어 보내기
+*  -[ ] 받은 명령어로 로봇 제어하기
 
 
 
