@@ -7,9 +7,9 @@
 |4주차|서버 사전 조사|제안서 작성 및 온라인 미팅|제안서 발표|[제안서](./Report/CapstoneProposal.pdf)|
 |5주차|https, codec 변경 시도/"외부로부터" 서버 접속(진행중)/웹캠 딜레이 문제(진행중)	| 노트북으로 서버 접속&교수님 면담|(과제가많아서 생략..)|[5주차보고서](../Report/week5.pdf), [WIL](./week_5.md)|
 |6주차|UVC 연결 성공, Time lag 현상 해결|웹캠 고장...|영상 스트리밍 시도|[6주차보고서](../Report/week6.pdf), [WIL](./week_6.md)|
-|7주차|codelab webrtc 웹 제작한 것 라즈베리파이에서 실행(실패)|uv4l과 web 연결하는 시도 및 datachannel공부||(../Report/report_7.pdf),[WIL](./week_7.md)|
+|7주차|codelab webrtc 웹 제작한 것 라즈베리파이에서 실행(실패)|uv4l과 web 연결하는 시도 및 datachannel공부||[7주차보고서](../Report/report_7.pdf),[WIL](./week_7.md)|
 |8주차|시험기간
-|9주차|시험(7주차에 이어 추가 자료조사)|웹에서 UV4L streaming server 연동 성공||(../Report/report_9.pdf),[WIL](./week_9.md)|
+|9주차|시험(7주차에 이어 추가 자료조사)|웹에서 UV4L streaming server 연동 성공||[9주차보고서](../Report/report_9.pdf),[WIL](./week_9.md)|
 |10주차|
 |11주차|
 |12주차|
