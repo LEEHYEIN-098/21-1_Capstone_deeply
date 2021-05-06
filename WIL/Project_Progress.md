@@ -10,7 +10,7 @@
 |7주차|codelab webrtc 웹 제작한 것 라즈베리파이에서 실행(실패)|uv4l과 web 연결하는 시도 및 datachannel공부||[7주차보고서](../Report/report_7.pdf),[WIL](./week_7.md)|
 |8주차|시험기간
 |9주차|시험(7주차에 이어 추가 자료조사)|웹에서 UV4L streaming server 연동 성공||[9주차보고서](../Report/report_9.pdf),[WIL](./week_9.md)|
-|10주차|
+|10주차||https 사용 가능 및 소켓으로 서로 다른 컴퓨터에서 메세지 전달 가능||[WIL](./week_10.md)|
 |11주차|
 |12주차|
 |13주차|
