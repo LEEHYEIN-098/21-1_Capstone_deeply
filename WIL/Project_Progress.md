@@ -272,7 +272,10 @@ UV4L 카메라 영상과 웹을 연동하는 건 uv4l-uvc.config 파일에서 �
 <details markdown="1">
 <summary>12주차</summary>
 
-
+* __12주차 목표
+*  -[ ] custom web app에 영상 스트리밍 기능 추가
+*  -[ ] custom web app 디자인 개선
+*  -[ ] 카메라 모터 제어
 
 
 </details>
