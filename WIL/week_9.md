@@ -1,5 +1,4 @@
 # 9주차 WIL
----
 
 < 라즈베리파이 원격으로 연결 >  
 
@@ -34,5 +33,21 @@ boot 최상위 폴더에
 
 `force_hw_codec=false`로 변경
 
+---  
 
+< wiringpi 최신 버전 설치 >  
+https://hoho325.tistory.com/212  
+(특별한 에러 없이 진행됨.)
+
+< wiringpi 참고 >  
+* pin 모드 설정하기  
+`pinMode(pin, INPUT/OUTPUT)`   
+
+* pin에 값 쓰기  
+`digitalWrite(pin, value)`  
+이 함수를 통해 원하는 pin에 값을 쓸 수 있다.  
+pin 번호는 setup 함수에 따라서 BCM이 될 수도, wpi 번호가 될 수도 있습니다.  
+주로 핀 모드가 OUTPUT일때 사용.  
+
+https://hoho325.tistory.com/218?category=780775  
 

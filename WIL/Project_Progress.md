@@ -10,8 +10,8 @@
 |7주차|codelab webrtc 웹 제작한 것 라즈베리파이에서 실행(실패)|uv4l과 web 연결하는 시도 및 datachannel공부||[7주차보고서](../Report/report_7.pdf),[WIL](./week_7.md)|
 |8주차|시험기간
 |9주차|시험(7주차에 이어 추가 자료조사)|웹에서 UV4L streaming server 연동 성공||[9주차보고서](../Report/report_9.pdf),[WIL](./week_9.md)|
-|10주차|
-|11주차|
+|10주차||https 사용 가능 및 socket 통해 서로 다른 컴퓨터에서 메세지 주고받기|||
+|11주차||browser에서 받은 키보드 입력을 python/RPi로 전달|로봇 이동 제어|[11주차보고서](../Report/report_11.pdf),[WIL](./week_10,11.md)|
 |12주차|
 |13주차|
 |14주차|
@@ -182,7 +182,7 @@ remote 캠이랑 local 캠이랑 동시에 실행 가능할 것 같은데 firefo
 <details markdown="1">
 <summary>8주차</summary>
 
-시험기간이므로 휴업합니다.
+시험기간.
 
 
 </details>
@@ -260,7 +260,9 @@ UV4L 카메라 영상과 웹을 연동하는 건 uv4l-uvc.config 파일에서 �
 <details markdown="1">
 <summary>11주차</summary>
 
-
+* __11주차 목표
+*  -[X] 로봇과 웹을 WebRTC로 연결해 메세지 전달
+*  -[X] webrtc를 통해 로봇 이동 제어
 
 
 </details>
@@ -270,7 +272,10 @@ UV4L 카메라 영상과 웹을 연동하는 건 uv4l-uvc.config 파일에서 �
 <details markdown="1">
 <summary>12주차</summary>
 
-
+* __12주차 목표
+*  -[ ] custom web app에 영상 스트리밍 기능 추가
+*  -[ ] custom web app 디자인 개선
+*  -[ ] 카메라 모터 제어
 
 
 </details>
