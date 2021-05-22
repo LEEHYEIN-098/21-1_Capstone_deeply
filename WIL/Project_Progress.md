@@ -12,7 +12,7 @@
 |9주차|시험(7주차에 이어 추가 자료조사)|웹에서 UV4L streaming server 연동 성공||[9주차보고서](../Report/report_9.pdf),[WIL](./week_9.md)|
 |10주차||https 사용 가능 및 socket 통해 서로 다른 컴퓨터에서 메세지 주고받기|||
 |11주차||browser에서 받은 키보드 입력을 python/RPi로 전달|로봇 이동 제어|[11주차보고서](../Report/report_11.pdf),[WIL](./week_10,11.md)|
-|12주차|
+|12주차|python코드에서 소켓으로 로봇 명령어 받기|uv4l streaming server에서 키코드 json파일 파싱 성공|데모 수정한 페이지에서 로봇 메세지 넘기기 성공(동영상&버튼)|[12주차보고서](../Report/report_12.pdf),[WIL](./week_12.md)|
 |13주차|
 |14주차|
 |15주차|
@@ -273,10 +273,10 @@ UV4L 카메라 영상과 웹을 연동하는 건 uv4l-uvc.config 파일에서 �
 <summary>12주차</summary>
 
 * __12주차 목표
-*  -[ ] custom web app에 영상 스트리밍 기능 추가
+*  -[X] custom web app에 영상 스트리밍 기능 추가
 *  -[ ] custom web app 디자인 개선
-*  -[ ] 카메라 모터 제어
-
+*  -[X] 카메라 모터 제어
+*  -[X] datachannel, socket 통신 끝
 
 </details>
 
@@ -285,7 +285,24 @@ UV4L 카메라 영상과 웹을 연동하는 건 uv4l-uvc.config 파일에서 �
 <details markdown="1">
 <summary>13주차</summary>
 
+* __13주차 목표__
+* -[ ] demo 페이지에 모터 제어 버튼 완성하기
+* -[ ] front UI 개선 => 깔끔하게 꾸미자
+* -[ ] arm 제어기능 추가하기
+* -[ ] face detection => object detection으로 변경해보기
+* -[ ] camera tracking 더 찾아보기
 
+(창의경진대회까지 13,14주 남았다..!! ㅍㅇㅌㅍㅇㅌ♥)
+
+
+* __월요일 목표__
+
+
+* __수요일 목표__
+
+
+
+* __금요일 목표__
 
 
 </details>
