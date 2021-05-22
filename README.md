@@ -18,7 +18,7 @@
 |9주차(04.26~)|~~웹을 이용한 로봇 제어 기능 구현~~|웹과 UV4L streaming server 연결|[보고서](./Report/report_9.pdf)
 |10주차(05.03~)|''|WebRTC 공부(RTCpeerconnection 통한 message 주고받기)|
 |11주차(05.10~)|웹을 이용한 로봇 제어 기능 구현|browser로부터 키보드 명령 받아 로봇 이동 제어(python)|[보고서](./Report/report_11.pdf)
-|12주차(05.17~)|웹사이트 UX/UI 개선|
+|12주차(05.17~)|웹사이트 UX/UI 개선|=> custom web에서 datachannel로 로봇 명령어 성공|[보고서](./Report/report_12.pdf)
 |13주차(05.24~)|OpenCV를 이용한 객체 인식||
 |14주차(05.31~)|객체 인식을 이용한 서비스 구현||
 |15주차(06.07~)|프로젝트 최종 발표|
@@ -49,6 +49,7 @@
 * [7주차 기록 내용](./WIL/week_7.md)
 * [9주차 기록 내용](./WIL/week_9.md)
 * [10,11주차 기록 내용](./WIL/week_10,11.md)
+* [12주차 기록 내용](./WIL/week_12.md)
 
 ## 프로젝트 진행 
 * [프로젝트 진행 상황 기록 표](./WIL/Project_Progress.md)
