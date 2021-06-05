@@ -1,0 +1,379 @@
+*:fullscreen{  
+  margin:0px;
+  padding:0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+}
+
+html{
+  height: 93%;
+  width: 100%;
+}
+body{
+  float:center;
+  width: 90%;
+  height: 94%;
+  margin : 0px auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left : 5%;
+  margin-right : 5%;  
+  position: relative;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  35px 35px 70px #bebebe,
+              -35px -35px 70px #ffffff;
+}
+.box1{
+  height: 10%;
+  width:100%;
+  text-align: center;
+  align-items: center;
+  /*flex-wrap:wrap;*/
+  padding-top: 1%;
+
+}
+h1{
+  margin-bottom: 0px;
+  height: 10%;
+  width:100%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  text-align: center;
+  align-items: center;
+  flex-wrap:wrap;
+  padding-top: 1%;
+  background: #e0e0e09c;
+  box-shadow:  23px 23px 46px #d7d7d7,
+               -23px -23px 46px #e9e9e9;
+
+
+}
+.contain{
+  height: 90%;
+  display: flex;
+  margin-bottom: 3px;
+}
+.container1{
+  padding-top: 1%;
+  width:60%;
+  height: 97.5%;
+  text-align: center;
+}
+.container2{
+  width: 40%;
+  height: 97.5%;
+  text-align: center;
+  background: #e0e0e0;
+  border-bottom-right-radius: 50px;
+  box-shadow: inset 16px 16px 36px #d0d0d0,
+              inset -16px -16px 36px #f0f0f0;
+}
+/*스트리밍 연결 버튼*/
+.box2 {
+  text-align: center;
+  margin: 2% auto;
+  margin-right: 20%;
+  margin-left: 20%;
+  position: relative;
+	align-items: left;
+	justify-content: left;
+
+}
+/*server 표시 안되게 가려둠*/
+#server {
+  display:none;
+  margin:0% auto 2%;
+  border-radius:18px;
+  padding-bottom:8px;
+  text-align:center;
+}
+/*Connect, Disconnect, face-D css 코드*/
+.btn{
+  margin-right: 7px;
+  margin-left: 7px;
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  display : inline-block;
+  /*border-radius: 10px;*/
+  padding: 5px 10px 8px 10px;
+  /*padding: 7px 5px 12px 6px;*/
+  transition: all 0.1s;
+  color: white;
+  text-shadow: 0px -3px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  box-shadow:  11px 11px 22px #c7c7c7,
+               -11px -11px 22px #f9f9f9;
+  
+}
+.btn:active{
+  transform:translateY(3px);
+}
+.btn.connect{
+  display:inline-block;
+  background: linear-gradient(145deg, #93e293, #64bb64);
+  border-bottom: 5px solid #328a32;
+}
+.btn.connect:active{
+  border-bottom: 2px solid #328a32;
+}
+.btn.disconnect{
+  display:inline-block;
+  background: linear-gradient(145deg, #e78784da, #df625d);
+  border-bottom: 5px solid #8a3232;
+}
+.btn.disconnect:active{
+  border-bottom: 2px solid #8a3232;
+}
+.btn.face{
+  display:inline-block;
+  background: linear-gradient(145deg, #8ba3e6c7, #4e75dfea);
+  border-bottom: 5px solid #324e8a;
+}
+.btn.face:active{
+  border-bottom: 2px solid #324e8a;
+}
+
+/*비디오 박스*/
+
+.box3{
+  text-align: center;
+}
+video {
+  /*width, height 추가해본 부분*/
+  width:720px;
+  height:480px;
+  border-radius: 30px;
+  position:absolute;
+  visibility:hidden;
+}
+canvas { 
+  width:720px;
+  height:480px;
+  border-radius: 30px;
+  background-color: #fff;
+  /*border:8px solid #fff;*/
+}
+
+/************* PART 4 : ROBOT ARM  ***************/
+
+.servo_contain{
+  width: 90%;
+  /*height: 60%;*/
+  margin-top: 5%;
+  margin-bottom: 5%;
+  /*margin-right: 30%;
+  margin-left: 30%;*/
+  text-align:center;
+  margin: 2% auto;
+}
+.box4{
+  margin-top: 10px;
+  padding-top:5px;
+  width: 100%;
+  text-align:center;
+}
+.box5{
+  text-align:center;
+  width: 100%;
+}
+.btncontain{
+  padding-top: 3%;
+  margin:2% auto 2%; 
+  text-align:center;
+  width: 100%;
+
+}
+.btn.reset{
+  display: inline-block;
+  background-color: #999;
+  background: linear-gradient(145deg, #999, #999);
+  border-bottom: 5px solid #3d3938;
+}
+.btn.reset:active{
+  border-bottom: 2px solid #3d3938;
+}
+
+.servo{
+  text-align:left;
+  -webkit-appearance: none;
+  width: 70%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  /*padding-right: 20px;  
+  padding-left: 20px;*/
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.servo:hover{
+  opacity: 1;
+}
+.servo::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.servo::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+/*키박스*/
+/*
+.box6{
+  float:right;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+	/*float: left;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: left;
+	justify-content: left;
+}
+*/
+h5{
+  margin: 2% auto ;
+
+}
+/***********Speed radio************/
+.box-radio-input input[type="radio"]{
+  display:none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+span{
+    font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+
+}
+
+.box-radio-input input[type="radio"] + span{
+  display:inline-block;
+  background:none;
+  border:1px solid #dfdfdf;  
+  padding:0px 10px;
+  text-align:center;
+  height:35px;
+  line-height:33px;
+  font-weight:500;
+  cursor:pointer;
+}
+
+.box-radio-input input[type="radio"]:checked + span{
+  border:1px solid #23a3a7;
+  background:#23a3a7;
+  color:#fff;
+}
+ 
+
+
+/*
+.btn.speed{
+  background-color: #999;
+  border-bottom: 5px solid #3d3938;
+}
+.btn.speed:active{
+  border-bottom: 2px solid #3d3938;
+}
+*/
+
+
+/*CheckBox style*/
+
+input[type="checkbox"] {
+  margin: 2% auto 2%;
+
+	float: center;
+	width: 42px;
+	height: 17px;
+	cursor: pointer;
+	background-color: rgb(170 170 170 / 30%);
+	-webkit-appearance: none;
+	border-radius: 8px;
+	position: relative;
+}
+
+input[type="checkbox"]:before {
+	content: "";
+	width: 21px;
+	height: 21px;
+	background-color: #F5F5F5;
+	border-radius: 50%;
+	position: absolute;
+	top: -2px;
+	z-index: 2;
+	left: -2px;
+	transition: all .2s linear;
+}
+
+input[type="checkbox"]:after {
+	content: "";
+	height: 100%;
+	width: 17px;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	border-radius: 17px;
+	background-color: rgb(51 174 184 / 30%);
+	transition: all .2s linear;
+}
+
+input[type="checkbox"]:checked:before {
+	left: calc(100% - 19px);
+	background-color: #33AEB8;
+}
+
+input[type="checkbox"]:checked:after {
+	width: 100%;
+	border-radius: 8px;
+}
+
+#Arrow{
+  margin:0% auto 2%; 
+}
+.arrow-key{
+  align-items: center;
+  text-decoration: none;
+  font-size: 25px;
+  /*font-weight: bold;*/
+  height: 75px;
+  width: 75px;
+  justify-content: center;
+  margin: 5px;
+  display: inline-flex;
+  /*display : inline-block;*/
+  border-radius: 10px;
+  /*padding: 5px 3px 10px 4px;*/
+  padding: 5px 5px 5px 5px;
+  transition: all 0.1s;
+  color: white;
+  text-shadow: 0px -2px rgba(0,0,0,0.5);
+  /*font-family: 'Orbitron', sans-serif;*/
+  background-color: #999;
+  border-bottom: 5px solid #3d3938;
+}
+.arrow-key:active{
+  transform : translateY(3px);
+  background-color: #3d3938;
+  border-bottom: solid #3d3938;
+}

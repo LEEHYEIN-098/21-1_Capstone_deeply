@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8' />
+        <title>Deeply-Remote Robot WEB</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <script async src="cv.js"></script>
+        <script src='face-detection.js'></script>
+        <script src='signalling.js'></script>
+        <script src='main.js'></script>
+        <script  type='text/javascript'>
+            var Module = {
+                preRun: [],
+                postRun: [],
+                print: (function () {
+                    return function (text) {
+                        text = Array.prototype.slice.call(arguments).join(' ');
+                        console.log(text);
+                    };
+                })(),
+                printErr: function (text) {
+                    text = Array.prototype.slice.call(arguments).join(' ');
+                    console.error(text);
+                }
+            };
+        </script>
+
+    </head>
+    <body>
+
+            <h1> Deeply Capstone Design 2021</h1>
+            <label id='server'>Web Service URL <input required type="text" id="address" value="" title="hostname (or IP address) and port of the UV4L WebRTC Web Service"/></label>
+
+        <div class="contain">
+        <div class="container1">
+            <div class="box2" id="button">
+                <button id='start' class="btn connect" title="If you do not see any video stream, make sure your browser supports the codec used within this demo (see the source code for details, or try Firefox or Chrome)">CONNECT</button>
+                <button id='stop' class="btn disconnect">DISCONNECT</button>
+                <button id='effect' class="btn face">Face Detection</button>
+            </div>
+            <div class="box3" id="video">
+                <video id='v'></video>
+                <canvas id='c'></canvas>
+                <script>
+                    // Let's get a default address for the signalling server
+                    var address = document.getElementById('address').value;
+                    if (!address || address === '') {
+                        var hostname = location.hostname;
+                        if (hostname) {
+                            address = hostname + ':' + (location.port || (location.protocol === 'https:' ? 443 : 80)) + '/webrtc';
+                            document.getElementById('address').value = address;
+                        } else {
+                            document.getElementById('address').value = "<host>:<port>/webrtc";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="btncontain">
+                <button class="btn reset" id="reset">RESET SERVO</button><br>     
+            </div>
+            <div class="servo_contain">
+                <!--로봇 ARM 제어-->
+                <!--<div class="btncontain">
+                    <button class="btn reset" id="reset">RESET SERVO</button><br>     
+                </div> -->      
+                <div class="box4" id="servoArm">
+                    <!--<button class="btn reset" id="reset">RESET SERVO</button><br>-->
+                    <!--<h5> ROBOT's ARM CONTROL </h5>-->
+                    ARM 4 <input type="range" class="servo" id="servo4" min="40" max="90" value="65" ><div class="value"><span id="ser_val4" value="65"></span></div>
+                    ARM 3 <input type="range" class="servo" id="servo3" min="0" max="180" value="90" ><div class="value"><span  id="ser_val3" value="90"></span></div>
+                    ARM 2 <input type="range" class="servo" id="servo2" min="15" max="160" value="87.5" ><div class="value"><span  id="ser_val2" value="72.5"></span></div>
+                    ARM 1 <input type="range" class="servo" id="servo1" min="15" max="160" value="87.5" ><div class="value"><span  id="ser_val1" value="72.5"></span></div>
+                </div>
+                <!--로봇 카메라 제어-->
+                <div class="box5" id="servoCamera">
+                    <!--<h5> CAMERA CONTROL </h5>-->
+                    CAM 8 <input type="range" class="servo" id="camera8" min="40" max="120" value="80"><span class="value" id="cam_val8"></span><br>
+                    CAM 7 <input type="range" class="servo" id="camera7" min="15" max="160" value="87.5"><span class="value" id="cam_val7"></span><br>
+                </div>
+            </div>
+            
+
+            <!--버튼으로 자동차 모터 제어-->        
+            <div class="box6" id="Arrow">
+                <!--<h5> Use Arrow Keys </h5>-->
+                <label class="box-radio-input"><input type="radio" name="speed" id="speed_low" checked="checked"><span>LOW</span></button></label>
+                <!--<button class="btn speed" id="speed_middle">MIDDLE</button>-->
+                <label class="box-radio-input"><input type="radio" name="speed" id="speed_high"><span>HIGH</span></button></label>
+                <!--키코드로 자동차 제어-->
+                    <div class="container">
+                        <input type="checkbox" id="keycode"/>
+                        <script>
+                            var keycode=document.getElementById('keycode');
+                            keycode.onkeydown = function(event){                          
+                                var keycodes={
+                                    keycode: event.keyCode
+                                };
+                                console.log('keycode KEY : '+JSON.stringify(keycodes));
+                                datachannel.send(JSON.stringify(keycodes));
+                                console.log("message sent: "+JSON.stringify(keycodes));
+                            };
+                        </script>
+                    </div>
+                <button class="arrow-key" id="up" value="38">▲</button><br>
+                <button class="arrow-key" id="left" value="37">◀</button>
+                <button class="arrow-key" id="down" value="40">▼</button>
+                <button class="arrow-key" id="right" value="39">▶</button>
+            </div>
+        </div>
+        </div>
+
+
+
+    </body>
+</html>
