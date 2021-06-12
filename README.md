@@ -30,7 +30,7 @@
 
 **📹 [프로젝트 발표 동영상](https://youtu.be/L8yuIzliiOg)📹**
 
-[프로젝트 결과 보고서](./)
+[프로젝트 결과 보고서](./Report/report.pdf)
 
 ## STACK
 <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>
