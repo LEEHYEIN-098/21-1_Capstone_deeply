@@ -18,7 +18,7 @@
 
 [김형석 교수님 프로젝트 RFP](./Capston_RFP.pdf)
 
-[프로젝트 제안서](./Report/CapstonProposal.pdf)
+[프로젝트 제안서](./Report/CapstoneProposal.pdf)
 
 **⏱ [프로젝트 계획서](./WIL/Project_Plan.md)⏱**
 
